@@ -14,6 +14,7 @@ namespace HttpRequestSender
     {
         private byte[] request_content = { };
         private byte[] response_content = { };
+        private WebHeaderCollection response_headers;
         private const long MaxAllowedSize = 1024 * 1024 * 2;
         public const string ProjectLink = "http://github.com/593141477/HttpRequestSender";
 
@@ -112,6 +113,8 @@ namespace HttpRequestSender
 
         private void ProcessResponse(HttpWebResponse result)
         {
+            response_headers = result.Headers;
+
             byte[] buffer = new byte[16 * 1024];
             Stream stream = result.GetResponseStream();
             using (MemoryStream ms = new MemoryStream())
@@ -127,6 +130,14 @@ namespace HttpRequestSender
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(ProjectLink);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (Form_Response form = new Form_Response(response_headers))
+            {
+                form.ShowDialog();
+            }
         }
 
     }

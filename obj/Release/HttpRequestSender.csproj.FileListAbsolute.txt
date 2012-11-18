@@ -6,3 +6,4 @@ I:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.Properties.Re
 I:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.csproj.GenerateResource.Cache
 I:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.exe
 I:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.pdb
+I:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.Form_Response.resources
