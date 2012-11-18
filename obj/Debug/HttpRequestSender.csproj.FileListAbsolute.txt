@@ -1,0 +1,8 @@
+I:\原创制作\C#\HttpRequestSender\bin\Debug\HttpRequestSender.exe
+I:\原创制作\C#\HttpRequestSender\bin\Debug\HttpRequestSender.pdb
+I:\原创制作\C#\HttpRequestSender\obj\Debug\ResolveAssemblyReference.cache
+I:\原创制作\C#\HttpRequestSender\obj\Debug\HttpRequestSender.Form1.resources
+I:\原创制作\C#\HttpRequestSender\obj\Debug\HttpRequestSender.Properties.Resources.resources
+I:\原创制作\C#\HttpRequestSender\obj\Debug\HttpRequestSender.csproj.GenerateResource.Cache
+I:\原创制作\C#\HttpRequestSender\obj\Debug\HttpRequestSender.exe
+I:\原创制作\C#\HttpRequestSender\obj\Debug\HttpRequestSender.pdb
