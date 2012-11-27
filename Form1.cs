@@ -55,6 +55,10 @@ namespace HttpRequestSender
         {
             try
             {
+                button3.Enabled = false;
+                textBox3.Text = "";
+                this.Refresh();
+                Application.DoEvents();
                 if ("GET".Equals(comboBox1.SelectedItem as string))
                     ProcessResponse(HttpHelper.HttpGet(textBox1.Text));
                 else if ("POST".Equals(comboBox1.SelectedItem as string))
@@ -69,6 +73,7 @@ namespace HttpRequestSender
             {
                 MessageBox.Show(err.Message, "Exception");
             }
+            button3.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
