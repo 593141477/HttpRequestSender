@@ -55,18 +55,19 @@ namespace HttpRequestSender
         {
             try
             {
+                int timeout = int.Parse(textBox4.Text);
                 button3.Enabled = false;
                 textBox3.Text = "";
                 this.Refresh();
                 Application.DoEvents();
                 if ("GET".Equals(comboBox1.SelectedItem as string))
-                    ProcessResponse(HttpHelper.HttpGet(textBox1.Text));
+                    ProcessResponse(HttpHelper.HttpGet(textBox1.Text, timeout));
                 else if ("POST".Equals(comboBox1.SelectedItem as string))
                 {
                     if (textBox2.Modified)
-                        ProcessResponse(HttpHelper.HttpPost(textBox1.Text, System.Text.Encoding.Default.GetBytes(textBox2.Text)));
+                        ProcessResponse(HttpHelper.HttpPost(textBox1.Text, System.Text.Encoding.Default.GetBytes(textBox2.Text), timeout));
                     else
-                        ProcessResponse(HttpHelper.HttpPost(textBox1.Text, request_content));
+                        ProcessResponse(HttpHelper.HttpPost(textBox1.Text, request_content, timeout));
                 }
             }
             catch (Exception err)
@@ -148,18 +149,18 @@ namespace HttpRequestSender
     }
     public class HttpHelper
     {
-        public static HttpWebResponse HttpGet(string url)
+        public static HttpWebResponse HttpGet(string url, int timeout)
         {
             HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
             request.Method = "GET";
-            request.Timeout = 5000;
+            request.Timeout = timeout * 1000;
             return request.GetResponse() as HttpWebResponse;
         }
-        public static HttpWebResponse HttpPost(string url, byte[] content)
+        public static HttpWebResponse HttpPost(string url, byte[] content, int timeout)
         {
             HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
             request.Method = "POST";
-            request.Timeout = 5000;
+            request.Timeout = timeout * 1000;
             request.ContentType = "application/x-www-form-urlencoded";
             request.ContentLength = content.Length;
 

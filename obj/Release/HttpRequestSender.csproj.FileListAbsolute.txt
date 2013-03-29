@@ -16,3 +16,12 @@ D:\My Documents\GitHub\HttpRequestSender\obj\Release\HttpRequestSender.Form1.res
 D:\My Documents\GitHub\HttpRequestSender\obj\Release\HttpRequestSender.Form_Response.resources
 D:\My Documents\GitHub\HttpRequestSender\obj\Release\HttpRequestSender.Properties.Resources.resources
 D:\My Documents\GitHub\HttpRequestSender\obj\Release\HttpRequestSender.csproj.GenerateResource.Cache
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.exe
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.pdb
+L:\原创制作\C#\HttpRequestSender\bin\Release\HttpRequestSender.exe
+L:\原创制作\C#\HttpRequestSender\bin\Release\HttpRequestSender.pdb
+L:\原创制作\C#\HttpRequestSender\obj\Release\ResolveAssemblyReference.cache
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.Form1.resources
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.Form_Response.resources
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.Properties.Resources.resources
+L:\原创制作\C#\HttpRequestSender\obj\Release\HttpRequestSender.csproj.GenerateResource.Cache
